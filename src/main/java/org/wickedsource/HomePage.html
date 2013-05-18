@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Apache Wicket Quickstart</title>
+<link
+	href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold'
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"
+	title="Stylesheet" />
+</head>
+<body>
+	<div id="hd">
+		<div id="logo">
+			<img src="logo.png" width="50px" height="50px" alt="Wicket Logo" />
+			<h1>Apache Wicket</h1>
+		</div>
+	</div>
+	<div id="bd">
+		<h2>Wicket Resource Serving</h2>
+		<h3>Static Unmounted Resource</h3>
+		<p>
+			<a wicket:id="staticResourceLink">Wicket Free Guide (PDF)</a>
+		</p>
+		<h3>Static Mounted Resource</h3>
+		<p>
+			<a href="/guide.pdf">Wicket Free Guide (PDF)</a><br/>
+			(Compare the Link URL to the URL of the unmounted resource)
+		</p>
+		<h3>Dynamic Byte Array Resource</h3>
+		<p>
+			<a wicket:id="byteArrayResourceLink">Hello World (TXT)</a>
+		</p>
+		<h3>Dynamically Rendered Image (using java.awt.Graphics2D)</h3>
+		<p>
+			<img wicket:id="dynamicImage"/>
+		</p>
+	</div>
+	<div id="ft"></div>
+</body>
+</html>
